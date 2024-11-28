@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #101820FF;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.project {
+    padding: 10px 50px;
+
+}
+
+.project>h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project-card {
+    width: 500px;
+    height: 100%;
+    background-color: #101820FF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease 0s;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h3 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-card p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-card button {
+    background-color: #101820FF;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 20px;
+}
+
+.project-card button:hover {
+    background-color: #FEE715FF;
+    color: #101820FF;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .project-cards {
+        gap: 20px;
+    }
+
+    .project-card button {
+        margin-bottom: 10px;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .project-card img {
+        height: 150px;
+    }
+}
